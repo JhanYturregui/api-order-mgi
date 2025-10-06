@@ -77,3 +77,13 @@ Para ver todos los endpoints se puede ingresar a la siguiente ruta
 ```
 http://localhost:3000/api/docs
 ```
+
+## PRUEBAS UNITARIAS
+
+1. Correr pruebas unitarias y ver la cobertura del código
+
+```
+npm run test --coverage
+```
+
+2. Para ver la cobertura de forma gráfica al ejecutar el comando anterior se crea una carpeta "coverage", dentro hay otra llamada "lcov-report" y se abre el archivo "index.html"
