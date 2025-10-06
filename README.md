@@ -87,3 +87,7 @@ npm run test --coverage
 ```
 
 2. Para ver la cobertura de forma gráfica al ejecutar el comando anterior se crea una carpeta "coverage", dentro hay otra llamada "lcov-report" y se abre el archivo "index.html"
+
+## DOCUMENTACIÓN TÉCNICA
+
+Se encuentra en la raíz del proyecto dentro del archivo llamado "documento_tecnico_api"
