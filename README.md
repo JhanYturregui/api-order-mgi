@@ -3,7 +3,7 @@
 1. Descargar el proyecto:
 
 ```
-git clone ...
+git clone git@github.com:JhanYturregui/api-order-mgi.git
 ```
 
 2. Instalar dependencias
