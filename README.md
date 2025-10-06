@@ -1,4 +1,4 @@
-## RUN PROJECT
+## DESCARGAR Y LEVANTAR EL PROYECTO
 
 1. Descargar el proyecto:
 
@@ -9,7 +9,7 @@ git clone git@github.com:JhanYturregui/api-order-mgi.git
 2. Instalar dependencias
 
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
 3. Crear un archivo .env basado en .env.template
@@ -25,3 +25,47 @@ docker compose up -d
 ```
 npm run start:dev
 ```
+
+## PRUEBAS (POSTMAN)
+
+1. Crear una petición en postman para crear un usuario con los siguientes datos
+
+```
+URL: http://localhost:3000/api/users
+TYPE: POST
+BODY:
+{
+    "name": "Test User",
+    "email": "test@gmail.com",
+    "password": "admin123"
+}
+```
+
+2. Crear una petición en postman para crear un producto con los siguientes datos
+
+```
+URL: http://localhost:3000/api/products
+TYPE: POST
+BODY:
+{
+    "code": "pro001",
+    "name": "Audios",
+    "stock": 5
+}
+```
+
+3. Crear una petición en postman para procesar la orden con los siguientes datos
+
+```
+URL: http://localhost:3000/api/orders
+TYPE: POST
+BODY:
+{
+    "userId": 1,
+    "products": [{"productId": 1, "quantity": 1}]
+}
+```
+
+## PRUEBAS DE CONCURRENCIA (JMETER)
+
+1. Instalar y abrir jmeter y abrir el archivo Mgi-test-1.jmx
