@@ -68,4 +68,12 @@ BODY:
 
 ## PRUEBAS DE CONCURRENCIA (JMETER)
 
-1. Instalar y abrir jmeter y abrir el archivo Mgi-test-1.jmx
+Instalar y abrir jmeter y abrir el archivo Mgi-test-1.jmx
+
+## DOCUMENTACIÓN SWAGGER
+
+Para ver todos los endpoints se puede ingresar a la siguiente ruta
+
+```
+http://localhost:3000/api/docs
+```
